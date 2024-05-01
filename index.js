@@ -1,6 +1,7 @@
 
 const express = require('express');
-require('./env.js')
+const dotenv =require('dotenv');
+dotenv.config();
 const bodyParser = require('body-parser');
 // import userRouter from './src/features/users/user.route.js';
 const userRouter = require('./src/routes/userRoute.js');
@@ -14,7 +15,7 @@ server.use(express.urlencoded({ extended: true }));
 server.use('/api/user', userRouter); // user Route middleware
 server.use('/api/group', groupRouter);// group Route middleware
 server.use('/api/chat', chatRouter); // chat Route middleware
-server.listen(2100, () => {
+server.listen(3000, () => {
     console.log("Server is listening on Port 2100!");
     connectUsingMongoose();
 })

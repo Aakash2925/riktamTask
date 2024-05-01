@@ -31,7 +31,7 @@ node index.js
 ```
 2. Open your browser:
 ```bash
-  Open the browser and go to http://localhost:2100 to view the running UI.
+  Open the browser and go to http://localhost:3000 to view the running UI.
 ```
 
 # Features
